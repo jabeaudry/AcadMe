@@ -1,0 +1,10 @@
+body {
+  padding-top: 5rem;
+}
+
+.starter-template {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 10px;
+}

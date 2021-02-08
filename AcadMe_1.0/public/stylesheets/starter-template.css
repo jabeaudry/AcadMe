@@ -1,5 +1,7 @@
 body {
   padding-top: 5rem;
+  background-color: whitesmoke;
+  font-family: 'Inter', sans-serif;
 }
 
 .starter-template {
@@ -11,5 +13,50 @@ body {
 
 .d-flex {
   margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+/*navbar style*/
+.navCustom {
+  background-color: #0f397d;
+  border-bottom: 2px solid #0f397d;
 
 }
+
+.nav-link {
+  color: #0f397d;
+}
+.nav-link:link {
+  color: #0f397d;
+}
+
+.nav-link:hover {
+  color: #37652c;
+}
+
+.nav-top-icon {
+  margin-bottom: 1px;
+}
+
+
+/*body main logo with text*/
+.main-logo {
+
+  margin: auto;
+ 
+  padding-top: 3vw;
+}
+
+/*body catchphrase*/
+.line-text {
+  font-family: 'Noto Serif', serif;
+  color: #0f397d;
+  font-size: 1.3rem;
+}
+
+#result {
+  background-color: #f8f9fa;
+  height: 100px;
+  width: auto;
+}
+

@@ -9,11 +9,13 @@
     <title>Starter Template · Bootstrap v5.0</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
-
+      <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif&family=Oranienbaum&display=swap" rel="stylesheet">
     
 
     <!-- Bootstrap core CSS -->
-<link href="../bootstrap-5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap-5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -38,32 +40,35 @@
   </head>
   <body>
     
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-md navbar navbar  bg-light fixed-top navCustom">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">AcadMe</a>
+    <a class="navbar-brand nav-top-icon" href="#"><img src = "images/green-logo-01.svg" width="35" height ="30"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <li class="nav-item active">
+        <!--<li class="nav-item active">
           <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>-->
+        <li class="nav-item">
+          <a class="nav-link" href="bibliography.html"><b>BIBLIOGRAPHY</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="bibliography.html">Bibliography</a>
+          <a class="nav-link" href="#"><b>MY PROFILE</b></a>
         </li>
-        <li class="nav-item">
+        <!--<li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-        <li class="nav-item dropdown">
+        </li>-->
+        <!--<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
           <ul class="dropdown-menu" aria-labelledby="dropdown01">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
-        </li>
+        </li>-->
       </ul>
     
     </div>
@@ -73,22 +78,18 @@
 <main class="container">
 
   <div class="starter-template text-center py-5 px-3">
-      <h1>
-        Lorem Ipsum
-      </h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <div class="main-logo">
+      <img src="images/acadme_big_logo.svg" height="200px" width="200px">
+    </div>
+      <p class="line-text">
+        The World Deserves Better Research.
       </p>
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class="form-control me-2" type="search" placeholder="Search for the article that you want to verify" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit" >Search</button>
       </form>
       <div class="container themed-container" id= "result">
-        Quality score: 90 <br />
-        Peer reviewed by 3 sources <br />
-        Control group in 85th percentile of studies<br />
-        Math calculations verified<br />
-        Academic journal has impact score in 58th percentile<br />
+        <img class = "ad" src= "images/ad.jpg" width="100px" height="120px">
       </div>
   </div>
 

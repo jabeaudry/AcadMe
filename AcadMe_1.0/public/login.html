@@ -9,7 +9,10 @@
     <title>Signin Template · Bootstrap v5.0</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
-
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif&family=Oranienbaum&display=swap" rel="stylesheet">
+    
     
 
     <!-- Bootstrap core CSS -->
@@ -39,8 +42,9 @@
     
 <main class="form-signin">
   <form action="index.html" method="get">
-    <img class="mb-4" src="images/squidward.png" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <img class="mb-4" src="images/acadme_big_logo.svg" alt=""  id="">
+    <img src="images/boder-double-01.svg">
+    <h3 class="h3 mb-3 fw-normal">Please sign in:</h1>
     <label for="inputEmail" class="visually-hidden">Email address</label>
     <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
     <label for="inputPassword" class="visually-hidden">Password</label>
@@ -54,7 +58,7 @@
     
     
   </form>
-  <button class="w-100 btn btn-lg btn-primary" type="submit" onclick="location.href='new-account.html'" id="createBtn" >Create an account</button>
+  <button class="w-100 btn btn-md btn-primary bottomButton" type="submit" onclick="location.href='new-account.html'" id="createBtn" >Create an account</button>
   <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
 </main>
 

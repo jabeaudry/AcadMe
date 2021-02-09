@@ -1,5 +1,5 @@
 body {
-  padding-top: 5rem;
+
   background-color: whitesmoke;
   font-family: 'Inter', sans-serif;
 }
@@ -11,9 +11,13 @@ body {
   margin-bottom: 10px;
 }
 
+.search-page-bar {
+  margin-bottom: 0px;
+}
+
 .d-flex {
   margin-top: 50px;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 /*navbar style*/
@@ -60,3 +64,27 @@ body {
   width: auto;
 }
 
+/*search bar -- main page*/
+
+.search-bar {
+  border-bottom: 1px solid #9cb4db;
+}
+
+.search-button {
+  border: 1px solid #37652c;
+  color: #37652c;
+}
+.search-button:hover {
+  background-color: #37652c;
+  border: 1px solid #4f8a40;
+}
+
+/*search-engine -- search page*/
+#search-engine {
+  padding: 0px;
+  margin: auto;
+}
+
+.result-text {
+  color: #0f397d;
+}

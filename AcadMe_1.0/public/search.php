@@ -1,3 +1,8 @@
+<?php
+
+  session_start();
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -42,7 +47,7 @@
     
 <nav class="navbar navbar-expand-md navbar navbar  bg-light fixed-top navCustom">
   <div class="container-fluid">
-    <a class="navbar-brand nav-top-icon" href="#"><img src = "images/green-logo-01.svg" width="35" height ="30"></a>
+    <a class="navbar-brand nav-top-icon" href="index.php"><img src = "images/green-logo-01.svg" width="35" height ="30"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -53,7 +58,7 @@
           <a class="nav-link" aria-current="page" href="index.html">Home</a>
         </li>-->
         <li class="nav-item">
-          <a class="nav-link" href="bibliography.html"><b>BIBLIOGRAPHY</b></a>
+          <a class="nav-link" href="#"><b>BIBLIOGRAPHY</b></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><b>MY PROFILE</b></a>
@@ -70,27 +75,26 @@
           </ul>
         </li>-->
       </ul>
-    
     </div>
   </div>
 </nav>
 
 <main class="container">
 
-  <div class="starter-template text-center py-5 px-3">
-    <div class="main-logo">
-      <img src="images/acadme_big_logo.svg" height="200px" width="200px">
-    </div>
-      <p class="line-text">
-        The World Deserves Better Research.
-      </p>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search for the article that you want to verify" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit" >Search</button>
+  <div class="starter-template text-center py-5 px-3 search-page-bar">
+    <form class="d-flex"  action="search.php" method="get">
+        <input class="form-control me-2 search-bar" type="search" placeholder="Search for the article that you want to verify" aria-label="Search" name="search-result">
+        <button class="btn btn-outline-success search-button" type="submit" >Search</button>
       </form>
+      
+      <div class="result-text">
+        <p>Results for <b><?php echo ($_GET['search-result']);?></b></p>
+       
+      </div>
+      <!-- ad space
       <div class="container themed-container" id= "result">
         <img class = "ad" src= "images/ad.jpg" width="100px" height="120px">
-      </div>
+      </div>-->
   </div>
 
 </main><!-- /.container -->

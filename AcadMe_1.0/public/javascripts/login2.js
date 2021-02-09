@@ -15,7 +15,7 @@ function validatePassword(){
   } else {
     confirm_password.setCustomValidity(''); 
     createBtn.addEventListener('click', () => {
-        location.href("index.html");
+        location.href("index.php");
       });
   }
 }
